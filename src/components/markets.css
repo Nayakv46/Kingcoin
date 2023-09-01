@@ -1,0 +1,107 @@
+.markets{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    
+}
+.markets-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.markets-legend{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-secondary-gradient);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.markets-legend > span {
+    flex: 1;
+}
+
+.markets-legend > span:not(:first-child){
+   text-align: end;
+}
+
+.markets-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.market_page-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.market_page-buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-black);
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.market_page-buttons > button.activePage {
+    background: var(--bg-secondary-gradient);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1000px){
+    .markets-legend{
+        display: flex;
+        grid-gap: 2rem;
+        align-items: center;
+       
+        justify-content: space-between;
+        
+    }
+    .markets-legend > span {
+        flex:none;
+    }
+    .markets-legend > span:first-child{
+        width: 12rem;
+    }
+    .markets-legend > span:nth-child(2){
+        width: 9rem;
+    }
+    .markets-legend > span:nth-child(3){
+        width: 9rem;
+    }
+    .markets-legend > span:nth-child(4){
+        width: 19rem;
+    }
+
+    .markets-legend,
+    .markets-wrapper{
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 660px){
+    .markets-legend{
+        white-space: nowrap;
+        overflow-x: auto;
+        width: 100%;
+    }
+}

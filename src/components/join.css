@@ -1,0 +1,139 @@
+.join{
+    margin-top: 2rem;
+}
+.join__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 4rem 0;
+}
+
+.join__content > img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.btc-float2{
+    top: 200px;
+    left: 200px;
+    animation: jump 2s infinite ease;
+}
+.eth-float2{
+    top: 200px;
+    right: 200px;
+    animation: jump 2s infinite ease;
+}
+
+.join__content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.join__content-text > h1 {
+    font-size: 95px;
+    line-height: 100px;
+    font-weight: 600;
+}
+
+.join__content-text > h1 > span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--bg-secondary-gradient);
+    color: transparent;
+}
+
+.join__content-text > p {
+    font-size: 20px;
+}
+
+.join__content-button{
+    display: flex;
+    justify-content: center;
+}
+
+.join__content-button > a {
+    background: var(--bg-secondary-gradient);
+    border-radius: 100px;
+    color: var(--color-white);
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: 250px;
+    font-family: var(--font-family);
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+@media screen and (max-width: 1250px){
+    .btc-float2{
+        left: 150px;
+    }
+
+    .eth-float2{
+        right: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1150px){
+    .btc-float2{
+        left: 100px;
+    }
+
+    .eth-float2{
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .btc-float2{
+        left: 50px;
+    }
+
+    .eth-float2{
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .btc-float2{
+        left: 0px;
+    }
+
+    .eth-float2{
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .btc-float2{
+        display: none;
+    }
+
+    .eth-float2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .join__content{
+        gap: 4rem;
+    }
+    .join__content-text > h1 {
+        font-size: 75px;
+        line-height: 80px;
+    }
+}
+
+
+

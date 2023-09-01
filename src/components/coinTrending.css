@@ -1,0 +1,16 @@
+.home_content-coin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.home_content-coin img {
+    width: 90px;
+    height: 90px;
+}
+
+.home_content-coin{
+    font-weight: 600;
+    font-size: 20px;
+}

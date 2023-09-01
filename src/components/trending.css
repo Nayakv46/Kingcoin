@@ -1,0 +1,145 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 70vh;
+}
+.home_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    line-height: 105px;
+}
+
+.home_title > h1 > span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--bg-secondary-gradient);
+    color: transparent;
+}
+
+.home_title > img {
+    width: 75px;
+}
+
+.btc-float{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    animation: jump 2s infinite ease;
+}
+.eth-float{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    animation: jump 2s infinite ease;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(-15%);
+    }
+    50%{
+        transform: translateY(15%);
+    }
+    100%{
+        transform: translateY(-15%);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .home_title{
+        font-size: 50px;
+        line-height: 85px;
+    }
+    .btc-float{
+        left: 50px;
+    }
+    .eth-float{
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .home_title{
+        font-size: 42px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .home_title{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    .btc-float{
+        left: 20px;
+    }
+    .eth-float{
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .btc-float,
+    .eth-float{
+        display: none;
+    }
+}
+
+.home_button{
+    display: flex;
+    justify-content: center;
+}
+.home_button{
+    display: none;
+}
+.home_button > a{
+    background: var(--bg-secondary-gradient);
+    border-radius: 100px;
+    color: var(--color-white);
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: 250px;
+    font-family: var(--font-family);
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.home_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home_content > a {
+    max-width: 25%;
+}
+
+@media screen and (max-width: 1150px){
+    .home_content{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .home_content {
+        display: none;
+    }
+    .home_button{
+        display: flex;
+    }
+}
+
+.error{
+    text-align: center;
+}
