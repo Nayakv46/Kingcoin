@@ -9,9 +9,10 @@
 <h3>Built with:</h3>
 
 » BEM CSS <br/>
-» React JS
+» React JS <br />
+» Coingecko API
 
-<h2>Screenshots of the Project</h2>
+<h2>Screenshots of the Project 📸</h2>
 
 <h3 align='center'>Home Page 🏡</h3>
 
