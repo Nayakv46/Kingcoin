@@ -1,13 +1,14 @@
 .navbar{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
+    transition: all 200ms ease-in-out;
 }
 
 .navbar.sticky{
     background-color: #0f051d;
     box-shadow: 0 10px 5px 0 rgba(0,0,0,.16);
-    position: sticky;
-    top: 0;
     z-index: 2;
 }
 

@@ -28,9 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-    
 
-      
       <nav className={`navbar ${toggleSticky ? `sticky` : null}`}>
         <div className="navbar__content">
 
